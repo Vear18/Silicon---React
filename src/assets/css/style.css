@@ -225,7 +225,7 @@ ol,ul {
     }
     input[type="checkbox"]:checked ~ .slider {
         background-color: var(--clr-primary) 
-      }-
+      }
 }
 
 
