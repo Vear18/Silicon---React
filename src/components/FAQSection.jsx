@@ -1,4 +1,3 @@
-// src/components/FAQSection.js
 import React from 'react';
 import phoneIcon from '../assets/images/telefoniconlila.svg';
 import messengerIcon from '../assets/images/messengericon.svg';
