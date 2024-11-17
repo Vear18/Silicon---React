@@ -1067,3 +1067,510 @@ ol,ul {
       color: #8b8f99; 
       text-decoration: none;
     }
+
+
+
+
+
+
+    :root {
+      --clr-bg: #ffffff;
+      --clr-text-body: #333333; 
+      --clr-text-heading: #111111; 
+      --clr-box-bg: #f5f5f5; 
+      --clr-footer-bg: #f9f9f9; 
+      --clr-primary: #6366f1; 
+      --clr-quote-icon: #6366f1; 
+    }
+    
+    
+    :root.dark {
+      --clr-bg: #0B0F19; 
+      --clr-text-body: #E2E5F1; 
+      --clr-text-heading: #F3F6FF; 
+      --clr-box-bg: #1A1E2A; 
+      --clr-footer-bg: #1A1E2A; 
+      --clr-primary: #BB86FC; 
+      --clr-quote-icon: #BB86FC; 
+    }
+    
+    
+    
+    
+    
+    body {
+      background-color: var(--clr-bg);
+      color: var(--clr-text-body);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--clr-text-heading);
+    }
+    
+
+    
+
+    
+
+
+    .carousel-section {
+      background-color: var(--clr-bg); 
+      color: var(--clr-text-body); 
+      padding-block: var(--section-spacing);
+      text-align: center;
+    }
+    
+    .carousel-section h2 {
+      color: var(--clr-text-heading); 
+    }
+    
+    .carousel-section p {
+      color: var(--clr-text-body); 
+    }
+    
+    .carousel-item {
+      background-color: var(--clr-card-bg); 
+      color: var(--clr-text-body);
+    }
+
+
+
+
+    .text h3 {
+      color: var(--clr-text-heading);
+    }
+    .text p {
+      color: var(--clr-text-body);
+    }
+
+
+
+    .money-transfer-section {
+      background-color: var(--clr-bg); 
+      color: var(--clr-text-body); 
+    }
+    
+    .money-transfer-section h2 {
+      color: var(--clr-text-heading); 
+    }
+    
+    .money-transfer-section ul li,
+    .money-transfer-section p {
+      color: var(--clr-text-body); 
+    }
+    
+    .money-transfer-section .button {
+      color: #fff;
+      background-color: var(--clr-primary); 
+    }
+    
+    .money-transfer-section .button:hover {
+      background-color: hsl(from var(--clr-primary) h s calc(1 - 10%));
+    }
+    
+
+
+
+
+.left-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--clr-text-heading); 
+}
+
+
+
+
+
+.testimonial-card {
+  background-color: var(--clr-box-bg); 
+  color: var(--clr-text-body); 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+}
+
+.testimonial-card p {
+  color: var(--clr-text-body); 
+}
+
+.testimonial-card .author-name {
+  color: var(--clr-text-heading); 
+}
+
+.testimonial-card .rating {
+  color: #fbc02d; 
+}
+
+.testimonial-card::before {
+  content: '“';
+  font-size: 40px;
+  color: var(--clr-quote-icon); 
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+}
+
+
+
+
+.faq-section {
+  background-color: var(--clr-bg); 
+  color: var(--clr-text-body); 
+}
+
+.faq-item {
+  background-color: var(--clr-box-bg); 
+  color: var(--clr-text-body);
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: rgba(255, 255, 255, 0.05); 
+}
+
+.faq-item .question {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--clr-text-heading);
+}
+
+.faq-item .icon {
+  font-size: 18px;
+  color: var(--clr-text-body);
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .icon {
+  transform: rotate(180deg); 
+}
+
+.faq-item .answer {
+  color: var(--clr-text-body);
+  margin-top: 10px;
+  display: none;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.faq-item.active .answer {
+  display: block;
+}
+
+
+
+
+
+
+
+.newsletter-section {
+  background-color: var(--clr-box-bg); 
+  color: var(--clr-text-body); 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter-content p {
+  font-size: 16px;
+  color: var(--clr-text-body);
+  font-weight: 600;
+}
+
+.newsletter-content img {
+  width: 40px; 
+  margin-right: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  background-color: #1A1E2A; 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  color: var(--clr-text-body);
+  border-radius: 5px;
+  width: 250px;
+}
+
+.newsletter-form button {
+  background-color: #BB86FC; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #9b68d4; 
+}
+
+
+
+
+
+
+
+
+
+.contact-button {
+  background-color: var(--clr-box-bg); 
+  color: var(--clr-text-body); 
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: rgba(255, 255, 255, 0.05); 
+}
+
+.contact-button svg, 
+.contact-button img {
+  color: var(--clr-quote-icon); 
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-button span {
+  font-size: 14px;
+  color: var(--clr-text-body); 
+}
+
+.contact-button a {
+  font-size: 14px;
+  color: #BB86FC; 
+  text-decoration: none;
+}
+
+.contact-button a:hover {
+  color: #9b68d4; 
+}
+
+
+    
+
+
+
+
+.footer {
+  background-color: var(--clr-footer-bg); 
+  color: var(--clr-text-body); 
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer a {
+  color: var(--clr-text-body); 
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #BB86FC; 
+}
+
+
+
+.testimonials-section {
+  border: 2px solid red;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background: var(--clr-box-bg);
+  padding: 2rem;
+  border-radius: var(--br-1);
+  max-width: 300px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+  color: #fbc02d;
+  font-size: 1.25rem;
+}
+
+.testimonial-text {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: var(--clr-text-body);
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.author-info {
+  text-align: left;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--clr-text-heading);
+}
+
+.author-title {
+  font-size: 0.8rem;
+  color: var(--clr-gray-600);
+}
+
+
+
+
+
+
+
+
+.money-transfer-section {
+  background-color: var(--clr-bg-100);
+  padding: var(--section-spacing) 0;
+}
+
+.container4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.left-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--clr-text-heading);
+}
+
+.testimonials {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.testimonial-card {
+  background-color: var(--clr-box-bg);
+  padding: 1.5rem;
+  border-radius: var(--br-1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  flex: 1;
+}
+
+.testimonial-card .rating {
+  color: #fbc02d;
+  font-size: 1.2rem;
+}
+
+.testimonial-card .testimonial-text {
+  font-size: 0.95rem;
+  color: var(--clr-text-body);
+  margin: 1rem 0;
+}
+
+.testimonial-card .testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-card .testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.author-info .author-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--clr-text-heading);
+}
+
+.author-info .author-title {
+  font-size: 0.85rem;
+  color: var(--clr-gray-600);
+}
+
+
+
+
+
+
+
+.faq-item .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .answer {
+  max-height: 200px; 
+  padding-top: 10px;
+}
+
+
+
+
+
+.error {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+
+
+
+

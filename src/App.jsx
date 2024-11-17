@@ -10,10 +10,7 @@ import NewsletterSection from './components/NewsletterSection';
 import Footer from './components/Footer';
 
 
-
 function App() {
-  
-
   return (
     <>
       <Navbar />
@@ -24,10 +21,13 @@ function App() {
       <MoneyTransferSection />
       <FAQSection />
       <NewsletterSection />
-      <Footer />
+      <Footer />  
+      
 
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
+

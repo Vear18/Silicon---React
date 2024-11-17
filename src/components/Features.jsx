@@ -55,8 +55,8 @@ function Features() {
         <div className="icon-container">
           <img src={support24} alt=""/>
         </div>
-        <div class="space-y-1">
-        <h3 class="h5">Support 24/7</h3>
+        <div className="space-y-1">
+        <h3 className="h5">Support 24/7</h3>
         <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
         </div>
       </div>
@@ -71,7 +71,7 @@ function Features() {
         </div>
       </div>
 
-      <div class="feature-card">
+      <div className="feature-card">
         <div className="icon-container">
           <img src={happy} alt="" />
         </div>

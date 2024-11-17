@@ -1,10 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../assets/images/solid.svg';
 import MenuIcon from '../assets/images/Menyknapp.png';
 import UserIcon from '../assets/images/logingubbe.svg';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const storedThemeMode = localStorage.getItem('themeMode');
+    return storedThemeMode === 'dark' || (!storedThemeMode && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  });
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('themeMode', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('themeMode', 'light');
+    }
+  }, [isDarkMode]);
+
+  const handleThemeToggle = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,13 +35,21 @@ function Navbar() {
         <a href="/">
           <img src={Logo} alt="Silicon logotype" />
         </a>
+        
+        {}
         <div className="darkmode-toggle">
           <p>Dark Mode</p>
           <label className="toggle">
-            <input type="checkbox" id="darkmode-switch" />
+            <input
+              id="darkmode-switch"
+              type="checkbox"
+              checked={isDarkMode}
+              onChange={handleThemeToggle}
+            />
             <span className="slider"></span>
           </label>
         </div>
+
         <button
           className="menu-btn"
           aria-controls="main-menu"
@@ -48,6 +74,12 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+
+
+
 
 
 
